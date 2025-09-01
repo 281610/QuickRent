@@ -1,0 +1,104 @@
+/* Container Layout */
+.signup-container {
+    display: flex;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Left Side - Branding */
+  .left-side {
+    flex: 1;
+    background: linear-gradient(135deg, #4f4ffe, #1100fe);
+    color: rgb(19, 8, 56);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInLeft 1s ease-in-out;
+  }
+  
+  .brand-title {
+    font-size: 7rem;
+    font-weight: bold;
+    animation: floatText 3s infinite ease-in-out;
+  }
+  
+  .brand-tagline {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    opacity: 0.9;
+  }
+  
+  /* Right Side - Form */
+  .right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
+    animation: fadeInRight 1s ease-in-out;
+  }
+  
+  .signup-form {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .signup-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Inputs */
+  .signup-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: 0.3s ease;
+  }
+  
+  .signup-form input:focus {
+    border-color: #4facfe;
+    outline: none;
+    box-shadow: 0 0 8px rgba(79, 172, 254, 0.4);
+  }
+  
+  /* Button */
+  .signup-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #0903c6, #0008fe);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+  }
+  
+  .signup-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes floatText {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
