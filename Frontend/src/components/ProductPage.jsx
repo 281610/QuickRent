@@ -6,7 +6,7 @@ function ProductPage() {
   const [item, setItem] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/items/${id}`)
+    fetch(`https://quickrent-4.onrender.com/api/items/${id}`)
       .then(res => res.json())
       .then(data => setItem(data))
       .catch(err => console.error(err));
