@@ -240,7 +240,7 @@ export default function Home() {
       const data = new FormData();
       Object.keys(formData).forEach(key => data.append(key, formData[key]));
   
-      const res = await fetch("http://localhost:5000/api/items", {
+      const res = await fetch("https://quickrent-4.onrender.com/api/items", {
         method: "POST",
         body: data
       });
