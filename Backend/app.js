@@ -186,7 +186,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const cors = require('cors');
 const path = require('path');
-const User = require('./models/User');
+const User = require('./models/user');
 const Item = require('./models/Item');
 
 const app = express();
