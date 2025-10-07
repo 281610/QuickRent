@@ -230,7 +230,7 @@ export default function Home() {
     });
   
     useEffect(() => {
-      fetch("http://localhost:5000/api/items")
+      fetch("https://quick-rent-lake.vercel.app/api/items")
         .then((res) => res.json())
         .then((data) => setItems(data));
     }, []);
