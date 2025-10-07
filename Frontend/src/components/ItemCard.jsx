@@ -74,7 +74,7 @@ function ItemCard({ item }) {
     >
       {item.image && (
         <img
-          src={`http://localhost:5000${item.image}`}
+          src={`https://quick-rent-lake.vercel.app/${item.image}`}
           alt={item.name}
           style={{
             width: "100%",
